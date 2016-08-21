@@ -1,6 +1,12 @@
 /**
  * Reset some basic elements
  */
+* {
+  box-sizing: border-box;
+}
+
+
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -13,6 +19,9 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html { font-size: 62.5%; } /* Sets rem units */
+
+
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -23,7 +32,11 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    height: 100vh;
+    width: 100vw;     
 }
+
+
 
 
 
@@ -156,8 +169,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -172,7 +185,13 @@ pre {
     }
 }
 
-
+.flex-container{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
 
 /**
  * Clearfix

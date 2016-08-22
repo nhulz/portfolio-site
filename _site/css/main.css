@@ -129,7 +129,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 /** HOME **/
 .home { height: 100vh; background-color: #F2F2F2; }
 .home .container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; position: relative; z-index: 1; height: 100vh; padding: 9rem 30rem; }
-.home h1 { font-size: 6rem; font-weight: bold; font-family: "Montserrat"; line-height: 8rem; }
+.home h1 { font-size: 4.1vw; font-weight: bold; font-family: "Montserrat"; line-height: 8rem; }
 .home h2 { margin-top: auto; }
 .home .wrapper { height: 100vh; }
 

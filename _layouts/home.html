@@ -4,18 +4,41 @@
   {% include head.html %}
   {% include base.html %}
 
-  <body>
+  <body id="home-body">
 
-      <div class="home">
-        <div class="container">
-          <h1>Design Strategy</h1>
-          <h1>Creative Direction</h1>
-          <h1>User Experience Design</h1>   
-          <h2> See what I've been up to.</h2> 
+        <div class="container title-container">
+ <!--        <div class="row">
+          <div class="two-thirds column"><h1>Design Strategy</h1></div>
+          <div class="one-third column"><h4 id="name">Nathan Hulsey</h4></div>
+        </div> -->
+          <div class="row">
+            <div class="ten columns">
+              <h1>Design Strategy</h1>            
+              <h1>Creative Direction</h1>
+              <h1>User Experience Design</h1>                   
+            </div>
+            <div class="two colums">
+              <h4 id="name">Nathan Hulsey</h4>
+            </div>
+          </div>
         </div> 
-      </div>
 
-                <img class="center-img" src="{{ base }}/assets/img/home-profile.png" alt="">
+        <img class="center-img" src="{{ base }}/assets/img/home-profile.png" alt="">
+
+      <!-- <div class="container">
+        <div class="project-list">
+          <p> See what I've been up to.</p>
+          <div class="project-list__item">
+          <img class="project-list__thumbnail" src="http://placehold.it/300x200">
+          <h5 class="project-list__item__title">This is the name of a test project</h5> 
+          </div>
+          <img class="project-list__thumbnail" src="http://placehold.it/300x200">
+          <img class="project-list__thumbnail" src="http://placehold.it/300x200">
+          <img class="project-list__thumbnail" src="http://placehold.it/300x200">
+          <img class="project-list__thumbnail" src="http://placehold.it/300x200">
+        </div> 
+      </div> -->
+
   </body>
 
 </html>

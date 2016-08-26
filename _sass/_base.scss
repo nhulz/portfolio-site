@@ -15,11 +15,12 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
-html { font-size: 62.5%; } /* Sets rem units */
+html { font-size: 62.5%; 
+
+    } /* Sets rem units */
 
 
 body {
@@ -34,6 +35,7 @@ body {
     font-kerning: normal;
     height: 100vh;
     width: 100vw;     
+    overflow: auto;
 }
 
 

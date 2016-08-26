@@ -6,7 +6,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-
 @font-face {
     font-family: 'League Spartan';
     src: url('{{ base }}/assets/fonts/leaguespartan-bold.eot');
@@ -44,7 +43,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$container: 	   960px;
 
 //Fonts
 
@@ -75,6 +74,7 @@ $light-gray: #F2F2F2;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "skeleton",
         "layout",
         "syntax-highlighting"
 ;

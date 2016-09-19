@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<h1>Projects</h1>
+
+				  {% for post in site.categories.projects %}
+				    {% if post.url %}
+
+				        <a href="{{ post.url }}">
+									<div id="portfolio__item--border">
+										<div class="portfolio__item">
+											<img class="portfolio-item--thumbnail" src="{{ post.image }}">
+											<div class="portfolio__item--desc">
+												<span>{{ post.title }}</span>
+											</div>
+										</div>
+									</div>
+								</a>
+
+				    {% endif %}
+				  {% endfor %}
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

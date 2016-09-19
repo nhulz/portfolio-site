@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @font-face { font-family: 'League Spartan'; src: url("/assets/fonts/leaguespartan-bold.eot"); src: url("/assets/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/leaguespartan-bold.woff2") format("woff2"), url("/assets/fonts/leaguespartan-bold.woff") format("woff"), url("/assets/fonts/leaguespartan-bold.ttf") format("truetype"), url("/assets/fonts/leaguespartan-bold.svg#league_spartanbold") format("svg"); font-weight: bold; font-style: normal; }
 /** Reset some basic elements */
 * { box-sizing: border-box; }
@@ -263,6 +264,14 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+body { background-color: #F2F2F2; }
+
+h1 { font-weight: bold; font-family: "Montserrat"; line-height: 7rem; font-size: 6.7rem; }
+
+h2 { margin-top: auto; }
+
+h4 { font-weight: bold; font-family: "Montserrat"; font-size: 2rem; }
+
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 56px; position: relative; }
 
@@ -316,15 +325,19 @@ there.
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
 /** HOME **/
-#home-body { background-color: #F2F2F2; }
+.container { position: relative; z-index: 2; padding-top: 9%; }
+.container #name { text-align: right; padding-top: 1.4rem; }
+.container #title--design-strategy:hover { color: #D0021B; cursor: pointer; }
+.container #title--creative-direction:hover { color: #197AEC; cursor: pointer; }
+.container #title--ux:hover { color: #E9DD40; cursor: pointer; }
 
-.title-container { padding-top: 9%; }
-.title-container h1 { font-weight: bold; font-family: "Montserrat"; line-height: 7rem; font-size: 6.7rem; }
-.title-container h2 { margin-top: auto; }
-.title-container h4 { font-weight: bold; font-family: "Montserrat"; font-size: 2rem; }
-.title-container #name { text-align: right; padding-top: 1.4rem; }
+#layer-one { background-color: #D0021B; height: 40rem; width: 40rem; mix-blend-mode: multiply; border-radius: 50%; }
 
-.center-img { height: 40rem; width: 40rem; left: 40%; top: 320px; position: fixed; z-index: -1; }
+#layer-two { background-color: #197AEC; height: 40rem; width: 40rem; mix-blend-mode: multiply; border-radius: 50%; }
+
+#layer-three { background-color: #E9DD40; height: 40rem; width: 40rem; mix-blend-mode: multiply; border-radius: 50%; }
+
+.center-img { height: 40rem; width: 40rem; left: 40%; top: 320px; position: fixed; z-index: 1; }
 
 .project-list { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; position: absolute; width: 300px; top: 73vh; }
 .project-list .project-list__thumbnail { margin-bottom: 1rem; }
@@ -394,3 +407,9 @@ there.
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+.portfolio__item { position: relative; float: left; margin-right: 3rem; margin-bottom: 3rem; }
+.portfolio__item img { border: 2px solid black; }
+.portfolio__item .portfolio__item--desc { font-family: "Roboto Mono", monospace; font-size: 2rem; color: white; width: auto; position: absolute; bottom: 20px; left: -20px; }
+
+.portfolio__item--desc span { background-color: black; padding: 10px; }

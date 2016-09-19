@@ -1,3 +1,25 @@
+body{
+    background-color: $light-gray;
+}
+
+h1{
+    font-weight: bold;
+    font-family: $montserrat;
+    line-height: 7rem;
+    font-size: 6.7rem;
+    // letter-spacing: .2rem;
+}
+
+h2{
+    margin-top: auto;
+}
+
+h4{
+    font-weight: bold;
+    font-family: $montserrat;
+    font-size: 2rem;
+}
+
 /**
  * Site header
  */
@@ -246,11 +268,7 @@
 
 /** HOME **/
 
-#home-body{
-    background-color: $light-gray;
-}
-
-.title-container {
+.container {
 
         // display: -webkit-box;
         // display: -moz-box;
@@ -261,36 +279,57 @@
         // -webkit-flex-direction: column;
         // flex-direction: column;  
 
-        // position: relative;
-        // z-index: 1;
+        position: relative;
+        z-index: 2;
       
         // height: 100vh;
         padding-top: 9%;        
     
-    h1{
-        font-weight: bold;
-        font-family: $montserrat;
-        line-height: 7rem;
-        font-size: 6.7rem;
-        // letter-spacing: .2rem;
-    }
 
-    h2{
-        margin-top: auto;
-    }
-
-    h4{
-        font-weight: bold;
-        font-family: $montserrat;
-        font-size: 2rem;
-    }
 
     #name{
         text-align: right;
         padding-top: 1.4rem;
     }
+
+    #title--design-strategy:hover{
+        color: $red;
+        cursor: pointer;
+    }
+    #title--creative-direction:hover{
+        color: $blue;
+        cursor: pointer;
+    }
+    #title--ux:hover{
+        color: $yellow;
+        cursor: pointer;
+    }
 }
 
+    #base-layer{
+    }
+
+    #layer-one{
+        background-color: $red;
+        height: 40rem;
+        width: 40rem;
+        mix-blend-mode: multiply; 
+        border-radius: 50%;
+    }
+    #layer-two{
+        background-color: $blue;
+        height: 40rem;
+        width: 40rem;      
+        mix-blend-mode: multiply; 
+        border-radius: 50%;                 
+    }
+    #layer-three{
+        background-color: $yellow;
+        height: 40rem;
+        width: 40rem;
+        mix-blend-mode: multiply; 
+        border-radius: 50%;                       
+    }
 
 
     .center-img{
@@ -301,7 +340,7 @@
         top: 320px;
 
         position: fixed;        
-        z-index: -1;
+        z-index: 1;
     }    
 
 

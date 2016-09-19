@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Your awesome title</title>
+  <title>Nathan Hulsey</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/portfolio-site/css/main.css">
+  <link rel="stylesheet" href="/portfolio-site/css/normalize.css">
   
-  <link rel="canonical" href="http://yourdomain.com/">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
+  <link rel="canonical" href="http://yourdomain.com/portfolio-site/">
+  <link rel="alternate" type="application/rss+xml" title="Nathan Hulsey" href="http://yourdomain.com/portfolio-site/feed.xml">
 </head>
 
 
@@ -22,6 +22,11 @@
   <!-- _includes/base.html -->
 
 
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<!-- <script type="text/javascript" src="/portfolio-site/assets/plugins/jquery.parallaxify.min.js"></script> -->
 
 
   <body id="home-body">
@@ -33,17 +38,34 @@
         </div> -->
           <div class="row">
             <div class="ten columns">
-              <h1>Design Strategy</h1>            
-              <h1>Creative Direction</h1>
-              <h1>User Experience Design</h1>                   
+              <h1 id="title--design-strategy">Design Strategy</h1>            
+              <h1 id="title--creative-direction">Creative Direction</h1>
+              <h1 id="title--ux">User Experience Design</h1>                   
             </div>
             <div class="two colums">
               <h4 id="name">Nathan Hulsey</h4>
             </div>
           </div>
+
+          <div class="row">
+            <div class="ten columns">
+              <h4><a href="/portfolio-site/projects.html">See what I've been up to</a></h4>
+            </div>
+          </div>
         </div> 
 
         <img class="center-img" src="./assets/img/home-profile.png" alt="">
+
+<!-- 
+<div id="base-layer">
+    <div id="layer-one" class="layer">
+        <div id="layer-two" class="layer">
+            <div id="layer-three" class="layer">
+            </div>
+        </div>
+    </div>
+ -->
+
 
       <!-- <div class="container">
         <div class="project-list">
@@ -60,5 +82,28 @@
       </div> -->
 
   </body>
+
+
+<script>
+
+// $(document).ready(function () {
+//     $('body').mousemove(function (e) {
+//         parallax(e, document.getElementById('layer-one'), 1);
+//         parallax(e, document.getElementById('layer-two'), 2);
+//         parallax(e, document.getElementById('layer-three'), 3);
+//     });
+// });
+
+// function parallax(e, target, layer) {    
+//     var layer_coeff = 100 / layer;
+//     // var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
+//     // var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+//     var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff + 47;
+//     var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff + 60;
+//     $(target).offset({ top: y ,left : x });
+// };
+
+</script>
+
 
 </html>

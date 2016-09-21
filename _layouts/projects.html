@@ -13,16 +13,8 @@
 				  {% for post in site.categories.projects %}
 				    {% if post.url %}
 
-				        <a href="{{ post.url }}">
-									<div id="portfolio__item--border">
-										<div class="portfolio__item">
-											<img class="portfolio-item--thumbnail" src="{{ post.image }}">
-											<div class="portfolio__item--desc">
-												<span>{{ post.title }}</span>
-											</div>
-										</div>
-									</div>
-								</a>
+						<!-- A single portolfio thumbnail with all the info -->
+						{% include portfolio-item.html %}
 
 				    {% endif %}
 				  {% endfor %}

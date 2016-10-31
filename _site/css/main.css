@@ -408,8 +408,6 @@ h4 { font-weight: bold; font-family: "Montserrat"; font-size: 2rem; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-#portfolio__item--border { border: 2px solid black; display: block; width: auto; }
-
 .portfolio__item { position: relative; float: left; margin-right: 3rem; margin-bottom: 3rem; }
 .portfolio__item .portfolio__item--desc { font-family: "Roboto Mono", monospace; font-size: 2rem; color: white; width: auto; position: absolute; bottom: 20px; left: -20px; }
 
